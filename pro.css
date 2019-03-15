@@ -1,0 +1,208 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+a{
+	text-decoration:none; 
+}
+.nav{
+	display:none;
+	position: absolute;
+	width:100%;
+	height:100%;
+	background: rgba(255,255,255,0.7);
+}
+.nav-content{
+	width:100%;
+	height: 100%;
+	background: transparent;
+}
+.nav-content li{
+	display:inline-block;
+	width:100%;
+	height: :100px;
+	text-align: center;
+	font-size: 70px;
+	opacity: 0.5;
+	margin:70px auto;
+}
+.nav-content li:hover{
+	opacity: 1;
+	transition: 0.4s ease-in-out;
+	cursor: pointer;
+}
+.nav-content span{
+	float:right;
+	background: gray;
+	border-radius: 50%;
+	width:70px;
+	height:70px;
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+/*Header styles*/
+.head{
+	width:100%;
+	height:600px;
+	padding:100px;
+	background: url("fire.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+.headcon{
+	width:100%;
+	height: 100%;
+	text-align: center;
+	padding:50px;
+}
+.headcon p,a{
+	width:100%;
+}
+.headcon p{
+	margin-top: 50px;
+	font-size: 70px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.btn{
+	background: pink;
+	color: white;
+	border-radius: 4px;
+	padding: 8px 20px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+/*Catalog*/
+.pics{
+	width:100%;
+	height: 700px;
+	transform: skewY(2deg) translateY(-70px);
+	z-index: 1;
+	background:white;
+}
+.wrap{
+	z-index:-1;
+	transform: skewY(-2deg);
+	display: flex;
+	flex-wrap: wrap;
+	background: transparent;
+	width:70%;
+	height: auto;
+	margin: 0 auto;
+	padding:130px 10px 0 10px;
+}
+.pic{
+	width:49%;
+	height:200px;
+	margin: 5px;
+	padding:80px 10px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bolder;
+	color: white;
+	background-color: royalblue;
+	border-radius:4px;
+	background: url("person.jpeg");
+	background-size: cover;
+}
+.pic:hover{
+	opacity: 0.9;
+	font-size: 37px;
+	transition: 0.4s ease-in-out;
+}
+
+
+/*Card styles*/
+.card{
+	width:100%;
+	height:400px;
+	padding: 50px;
+	background: gainsboro;
+	transform: translateY(-137px);
+	margin-bottom: -137px;
+}
+.wrap2{
+	background: red;
+	border-radius: 2px;
+	width:300px;
+	height: 300px;
+	margin:0 auto;
+	padding:30px;
+	text-align: center;
+	color: white;
+	transition: 0.9s ease-in-out;
+}
+.wrap2:active{
+	width:400px;
+	height: 400px;
+}
+.normie{
+	padding: 10px;
+	font-size: 25px;
+	width:62%;
+	margin: 0 auto 20px auto;
+	border-top:1px solid gainsboro;
+	border-bottom:1px solid gainsboro;
+}
+.power{
+	font-size: 15px;
+	width:40%;
+	margin: 0 auto 20px auto;
+}
+.date{
+	width:70%;
+	margin: 20px auto;
+	border-radius: 3px;
+	background: white;
+	padding:5px 10px;
+	color: red;
+	font-weight: bolder;
+}
+.hash{
+	font-size: 35px;
+	font-weight: bolder;
+	font-style: italic;:
+}
+
+
+/*Back styles*/
+
+.bck{
+	height:700px;
+	width:100%;
+	overflow: hidden;
+}
+.wrap3{
+	background-image: url("flora.jpg");
+	background-size: cover;
+	height: inherit;
+	width:100%;
+}
+.cont{
+	position: relative;
+	left:250px;
+	width:30%;
+	height:100%;
+	background: white;
+	padding: 40px;
+}
+.cont h1,p{
+	width:100%;
+	text-align: center;
+}
+.cont h1{
+	font-size: 40px;
+	margin:50px 0 350px 0;
+}
+.cont p{
+	font-size: 50px;
+}

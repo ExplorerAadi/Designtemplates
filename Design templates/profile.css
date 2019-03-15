@@ -1,0 +1,121 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family:var(--raleway);
+}
+
+.container{
+	position: relative;
+	padding:50px 200px;
+	background: #444;
+	width:100%;
+	height:100vh;
+}
+
+.card{
+	position:;
+	width:30%;
+	height: 80vh;
+	background: linear-gradient(45deg, pink, blue);
+	margin:0 auto;
+}
+
+.pic{
+	position: absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-40%,-50%);
+	width:20%;
+	height: 40%;
+}
+
+#one{
+	position: absolute;
+	width:80%;
+	height: 80%;
+	background: transparent;
+	border:solid 2px cyan;
+	transform: rotate(45deg);
+	border-radius: 10px;
+}
+
+#two{
+	position: absolute;
+	width:90%;
+	height: 90%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: transparent;
+	border:solid 2px cyan;
+	border-radius: 10px;
+}
+
+#three{
+	position: absolute;
+	width:90%;
+	height: 90%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: transparent;
+	border:solid 2px cyan;
+	border-radius: 10px;
+}
+
+#profile{
+	position: absolute;
+	width:90%;
+	height: 90%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+	background: cyan;
+	border:solid 2px #fff;
+	border-radius: 10px;
+}
+
+
+#info{ 
+	position: absolute;
+	bottom: 200px;
+	width:22%;
+	color:#fff;
+	text-align: center;
+}
+
+#info h6{
+	font-size: 15px;
+}
+
+#info p{
+	font-size: 25px;
+	font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

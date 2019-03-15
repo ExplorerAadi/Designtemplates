@@ -1,0 +1,276 @@
+
+/*Global Declarations*/
+
+:root{
+	--mucha:#81D4FA;
+}
+*{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+	text-align: center;
+	list-style-type: none;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	line-height: 1.5em;
+}
+
+h1{
+	font-size: 55px;
+	width:80%;
+	margin:0 auto;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+}
+
+.comp{
+	background: url(https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100vw;
+	height: 80vh;
+	color: white;
+}
+.mech{
+	background: url(mech.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100vw;
+	height: 80vh;
+	color: white;
+}
+.civil{
+	background: url(civil.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100vw;
+	height: 80vh;
+	color: white;
+}
+.it{
+	background: url(it.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100vw;
+	height: 80vh;
+	color: white;
+}
+.auto{
+	background: url(auto.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100vw;
+	height: 80vh;
+	color: white;
+}
+.elec{
+	background: url(elec.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100vw;
+	height: 80vh;
+	color: white;
+}
+.hotel{
+	background: url(hotel.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100vw;
+	height: 80vh;
+	color: white;
+}
+.overlay{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width:100%;
+	background: rgba(0,0,0,0.4);
+	z-index: 0;
+}
+.hero nav{
+	width:auto;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+.hero nav a{
+	display: inline-block;
+	width:auto;
+	margin: 0;
+	padding: 15px 40px;
+	font-size: 1.5rem;
+	color:white;
+	transition: 0.6s;
+}
+
+.hero nav a:hover{
+	background: var(--mucha);
+}
+
+.hero h1{
+	font-size: 72px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 10px 40px;
+	background: rgba(255,255,255,0.2);
+}
+
+/*Section A*/
+.section-a{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: gainsboro;
+	padding: 60px;
+}
+
+.para{
+	font-size: 25px;
+	padding: 10px;
+	margin-bottom: 20px;
+	color: rgba(0,0,0,0.6);
+}
+
+.boldd{
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+/*Section B*/
+
+.section-b{
+	position: relative;
+	width:100vw;
+	padding: 60px;
+}
+
+.row{
+	margin-top: 60px auto 0 auto;
+	padding:0 30px;
+	display: inline-block;
+	position: relative;
+	width:100%;
+	height: auto;
+	align-content: space-around;
+}
+
+.card{
+	display:inline-block;
+	position: relative;
+	height: 400px;
+	width:400px;
+	margin: 20px;
+}
+
+.one{
+	background: url(https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=face-facial-hair-fine-looking-614810.jpg&fm=jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.two{
+	background: url(https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-position: center;
+	background-size: cover;
+}
+
+.hovy{
+	position: absolute;
+	margin:7.5%;
+	background: var(--mucha);
+	color:#fff;
+	width:85%;
+	height: 85%;
+	opacity: 0;
+	transition: 0.4s ease-in-out ;
+}
+
+.card:hover .hovy {
+	opacity: 0.9;
+}
+.card:hover .hovy h4{
+	animation:bounce 0.7s 1;
+}
+
+@keyframes bounce{
+	0%{top:100px;}
+	100%{top:170px;}
+}
+
+.hovy h4{
+	width:100%;
+	font-size: 35px;
+	font-weight: bold;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	line-height: 1.5em;
+}
+
+.hovy p{
+	width:100%;
+	font-size: 20px;
+	position: absolute;
+	left: 50%;
+	top:60%;
+	transform: translate(-50%,-50%);
+	margin-top: 1em;
+}
+
+footer{
+	width:100vw;
+	height:400px;
+	background: var(--mucha);
+}
+
+
+
+@media screen and (max-width:700px){
+
+
+	.hero > h1{
+		font-size: 50px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="C:\Users\rahul\Dropbox\links and files\Helper files\swatches.css">
+	<link rel="stylesheet" type="text/css" href="ankit.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+	<title>Query display app</title>
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<i class="fab fa-500px"></i>
+			<i class="fas fa-bars"></i>
+			<div class="nav">
+				<i class="fas fa-times"></i>
+				<ul>
+					<li>about</li>
+					<li>contact</li>
+					<li>information</li>
+					<li>service</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="search">
+			<input type="text" placeholder="Enter a search query..." ng-model="query" autofocus="true">
+			<a class="submit" href="#">Search</a>
+			<div class="social">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-google-plus-g"></i>
+			</div>
+			<p>Your query was <span class="red">{{query}}!</span></p>
+		</div>
+	</section>
+
+	<section class="main">
+		<div class="wrap">
+			<div class="item" id="one">
+				<div class="hovy">
+					<div class="text">
+						<h1>Out of the Blue.</h1>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<p>4</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="two">
+				<div class="hovy">
+					<div class="text">
+						<h1>Out of the Red.</h1>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<p>4</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="tri">
+				<div class="hovy">
+					<div class="text">
+						<h1>Out of the Black.</h1>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<p>4</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="ankit.js"></script>
+</body>
+</html>

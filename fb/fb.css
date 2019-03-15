@@ -1,0 +1,108 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+	font-family: 'Roboto',sans-serif;
+	clear: all;
+}
+/*Header styles*/
+header{
+	background-color: #303F9F;
+	height:80px;
+	overflow: hidden;
+}
+h1{
+	margin-top: 10px;
+	font-size: 40px;
+	color:white;
+}
+.head{
+	max-width: 980px;
+	background-color: #303F9F;
+	height:80px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.logo{
+	display: flex;
+	margin: 0 auto;
+	padding-top: 15px;
+	align-content: flex-end;
+	height: 80px;
+	max-width:auto;
+	overflow: hidden;
+	background-color: #303F9F;
+}
+.logo button{
+	position: relative;
+	margin-left: 15px;
+	text-align: center;
+	height:30px;
+	width:71px;
+	top:23px;
+	background-color:rgba(0,255,0,0.6);
+	border:none;
+	border-radius: 2.5px;
+	color:white;
+	font-weight: 700;
+}
+
+/*Form div styles*/
+
+.container{
+	position: relative;
+	padding:80px 0;
+	height: auto;
+	max-width: 100%;
+	background-color: rgba(0,0,0,0.1);
+}
+.container .login{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 30px auto;
+	background-color: white;
+	border-radius: 4px;
+	height:auto;
+	width:620px;
+}
+#log{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	display: flex;
+	height: 300px;
+	margin: auto;
+	width:396px;
+}
+#loghead{
+	margin-top: 40px;
+	font-size: 18px;
+}
+#loginput{
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	width:80%;
+	font-size: 14px;
+	margin: 0 auto;
+}
+#loginput a{
+	font-size: 12px;
+}
+.login p,input,button,a{
+	height: 40px;
+	margin-bottom: 10px;
+	padding:10px;
+}
+ button{
+ 	color: white;
+ 	font-weight: 700;
+	background-color: #303F9F;
+	border:none;
+	opacity: 0.9;
+	border-radius: 3px;
+}
+ button:hover{
+	opacity: 1;
+}

@@ -1,0 +1,309 @@
+@import url("ecomfoot.css");
+
+.fab{
+	font-size: 50px;
+	position: absolute;
+	left:50%;
+	top:30px;
+	transform:translateX(-50%);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color:#fff;
+	font-family: var(--josesans);
+	list-style-type: none;
+}
+
+.chat{
+	position:fixed;
+	padding: 1em;
+	bottom: 20px;
+	right:30px;
+	background: #333;
+	color: #fff;
+	width:80px;
+	cursor: pointer;
+	height: 80px;
+	border-radius: 50%;
+	z-index: 999;
+	font-size: 25px;
+}
+
+.hidden{
+	width:400px;
+	text-align: center;
+	height:600px;
+	background: #333;
+	border-radius: 10px 10px 0 0;
+	position:absolute;
+	right:0px;
+	bottom: -20px;
+	padding: 80px 30px;
+	display: none;
+	cursor: default;
+}
+
+.hidden p{
+	margin: 0 auto;
+	color: #fff;
+	width:80%;
+	font-size: 20px;
+}
+
+.hidden i{
+	padding: 10px;
+	position: absolute;
+	top:10px;
+	right:10px;
+	cursor: pointer;
+}
+
+.container{
+	height: 100vh;
+	width:100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#hero-img{
+	background: url(https://images.pexels.com/photos/1075189/pexels-photo-1075189.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.overlay{
+	position: absolute;
+	background: rgba(0,0,0,0.8);
+	height: 100%;
+	width:100%;
+}
+
+.hero-text{
+	font-size: 20px;
+	text-align: center;
+	width:60%;
+	position: absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.uptitle{
+	color: var(--tan);
+	margin-bottom: 15px;
+}
+
+.headline{
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+.btn{
+	position: absolute;
+	top:120%;
+	left:50%;
+	transform: translateX(-50%);
+	padding: 0.7em 2em;
+	border: 5px double var(--tan);
+}
+
+.btn i{
+	margin-left: 10px;
+	transition: 0.5s;
+}
+
+.btn:hover .fa-arrow-right{
+	margin-left: 20px;
+}
+
+/*Catalog styles*/
+
+#catalog{
+	background: #000;
+}
+
+.row{
+	width:100%;
+	display: flex;
+	padding: 10px;
+	justify-content: space-around;
+}
+
+.item{
+	position: relative;
+	text-align: center;
+	padding: 50px 30px;
+	margin: 10px;
+	height: 75vh;
+	min-width:450px;
+	background: #222;
+}
+
+.item h2{
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
+.downtitle{
+	font-size: 14px;
+	opacity: 0.8;
+	margin-bottom: 10px;
+}
+
+.item .fa-plus-circle{
+	font-size: 35px;
+	margin-top: 20px;
+}
+
+.img{
+	position: absolute;
+	top:40%;
+	left:50%;
+	transform: translateX(-50%);
+	background: #fff;
+	width:70%;
+	height: 55%;
+	border:10px solid #777;
+	background: transparent;
+	border-radius: 50%;
+}
+
+.thin{
+	position: absolute;
+	width:90%;
+	height:90%;
+	border: 5px solid #777;
+	border-radius: 50%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: url(https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b0dad6307f4db24e9d52d0140adab06&auto=format&fit=crop&w=634&q=80);
+	background-size: cover;
+	background-position: bottom;
+}
+
+#catalog .btn{
+	position: absolute;
+	top:85%;
+}
+
+/*Details styles*/
+#story{
+	background: url(https://images.unsplash.com/photo-1508655382032-b95191fa1b51?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=897bed1384c75f762e18a09694e62b9c&auto=format&fit=crop&w=1950&q=80);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.storyline{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:60%;
+	height:70vh;
+	text-align: center;
+}
+
+.storyline h2{
+	position: relative;
+	top: 20%;
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+
+.storyline p{
+	position: relative;
+	top:30%;
+	font-size: 20px;
+}
+
+.storyline a{
+	position: absolute;
+	top: 100%;
+	transition: .3s;
+}
+
+.btn:hover{
+	background: var(--tan);
+}
+
+#one{
+	position: absolute;
+	top:-40%;
+	left: 50%;
+	height: 50px;
+	width:2px;
+	background-color: var(--tan);
+}
+
+#two{
+	position: absolute;
+	top:115%;
+	left: 50%;
+	height: 50px;
+	width:2px;
+	background-color: var(--tan);
+}
+
+
+/*Join styles*/
+
+.join{
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	background: rgba(0,0,0,0.09);
+}
+
+#hero-text{
+	font-size: 20px;
+	text-align: center;
+	width:60%;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+#hero-text *{
+	margin-bottom: 15px;
+	color: #333;
+}
+
+#hero-text h2{
+	font-size: 50px;
+}
+
+#hero-text a{
+	text-shadow: .5px .5px #000;
+	color: var(--tan);
+	font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

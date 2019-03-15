@@ -1,0 +1,262 @@
+*{
+	margin:0;
+	padding :0;
+	color:#fff;
+	font-size: 30px;
+	font-family: var(--raleway);
+	box-sizing:border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+h1{
+	font-size: 100px;
+	color:#fff;
+}
+
+strong{
+	color:var(--skyblue);
+}
+
+.header{
+	position: relative;
+	width:100%;
+	height:100vh;
+	background: url(https://images.pexels.com/photos/408951/pexels-photo-408951.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+nav{
+	display: flex;
+	position: absolute;
+	width:90%;
+	height: auto;
+	padding: 50px 0 0 0;
+	left:50%;
+	transform: translate(-50%,0);
+	z-index: 2;
+}
+
+.logo{
+	position: relative;
+	width:200px;
+	height:70px;
+	float: left;
+}
+
+#logio{
+	text-align: center;
+	font-size: 50px;
+	position: absolute;
+	width:100%;
+	height: 100%;
+}
+
+sub{
+	position: absolute;
+	left: 85%;
+	top:50%;
+	background: var(--tan);
+	border-radius: 30px;
+	padding:5px 10px;
+	font-size: 15px;
+}
+
+.nav-items{
+	position:absolute;
+	display: flex;
+	right:0;
+	text-align: center;
+}
+
+.nav-items a:hover{
+	background: var(--tan);
+}
+
+.nav-items a:hover{
+	color: #fff;
+}
+
+.nav-items a{
+	width:auto;
+	padding:20px 25px;
+	font-size: 25px;
+	line-height: 70px;
+	transition: 0.5s ease-in-out;
+	font-weight: 900;
+	color:#fff;
+}
+
+
+
+.slogan{
+	width:50%;
+	position: absolute;
+	top:20%;
+	left:30%;
+}
+
+.slogan hr{
+	width:30%;
+	height: 5px;
+	background: #fff;
+	padding: 0;
+	margin: 2px 0 10px 0;
+}
+
+.slogan p{
+	margin-bottom: 20px;
+}
+
+.slogan a{
+	text-align: center;
+	position: absolute;
+	bottom: -30%;
+	padding:10px 20px;
+	width:30%;
+	height:60px;
+	margin: 0 auto;
+	border-radius: 30px;
+	background: var(--tan);
+}
+
+.wrapper{
+	width:90%;
+	height:35%;
+	display:flex;
+	flex-wrap: wrap;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.box{
+	position:relative;
+	width:22%;
+	height:100%;
+}
+
+.box p{
+	font-size: 50px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	transition: 0.3s ease-in-out;
+}
+
+.overlay{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.4);
+	transition: 0.5s ease-in-out;
+}
+
+#arrow{
+	width:12%;
+	height: 100%;
+}
+
+.box:nth-child(1){
+	background: url(https://images.pexels.com/photos/192933/pexels-photo-192933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	background-position: center;
+}
+
+.box:nth-child(2){
+	background: url(https://images.pexels.com/photos/332208/pexels-photo-332208.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+	background-size: cover;
+	background-position: center;
+}
+
+.box:nth-child(3){
+	background: url(https://images.pexels.com/photos/6270/woman-flowers-holidays-girl-6270.jpg?auto=compress&cs=tinysrgb&h=350);
+	background-size: cover;
+	background-position: center;
+}
+
+.box:nth-child(4){
+	background: url(https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&h=350);
+	background-size: cover;
+	background-position: center;
+}
+
+.box:hover .overlay{
+	background: rgba(0,0,0,0.8);
+}
+
+.box:hover p{
+	top:40%;
+}
+
+.icon{
+	width:80px;
+	height:80px;
+	text-align: center;
+	line-height: 80px;
+	font-weight: 900;
+	font-size: 30px;
+	position: absolute;
+	background: #fff;
+	color:var(--grey);
+	border-radius: 50%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	transition: 0.5s ease-in-out;
+}
+
+.icon:hover{
+	font-size: 40px;
+}
+
+.side{
+	text-decoration: none;
+	color:#fff;
+	width:auto;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	background: var(--dblue);	
+	position: absolute;
+	top: 50%;
+	right:-99px;
+	transform: rotate(90deg);
+}
+
+.side-items{
+	line-height: 45px;
+	padding: 10px 20px;
+	font-size: 20px;
+	transition:0.5s ease-in-out;
+}
+
+.side-items:hover{
+	background: var(--tan);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

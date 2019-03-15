@@ -1,0 +1,334 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	line-height: 1em;
+}
+header{
+	position:relative;
+	width:70%;
+	margin:0 auto;
+	padding:30px 5px 0 5px;
+	content: "";
+	height: auto;
+	display: flex;
+	overflow: hidden;
+}
+.logo img{
+	width:150px;
+	height:60px;
+	background-size: cover;
+}
+.nav{
+	margin-left: 50px;
+	display: flex;
+	width: 50%;
+}
+.nav ul{
+	margin:auto 0;
+	margin-left: 150px;
+	display: flex;
+	list-style-type: none;
+	font-size: 20px;
+	color:white;
+	text-transform: capitalize;
+}
+.nav li{
+	margin-left: 50px;
+	padding: 20px;
+}
+.nav li:hover{
+	background: white;
+	color:black;
+	border-radius: 2px;
+	transition: 0.4s ease-in-out;
+}
+.nav-btns{
+	margin-left: 100px;
+	width:200px;
+	display: flex;
+}
+.nav-btns .hlink,button{
+	margin:auto 10px;
+	padding:5px 0;
+}
+.hlink{
+	text-transform: capitalize;
+	font-size: 15px;
+	color:skyblue;
+	text-decoration: none;
+}
+.hlink:hover{
+	cursor: pointer;
+	border-bottom: 1.5px solid skyblue;
+	transition: 0.2s ease-in-out;
+}
+.hbtn{
+	border-radius: 5px;
+	height:40px;
+	padding: 2px;
+	width:100%;
+	border:1.2px solid white;
+	text-align: center;
+	background: transparent;
+	color:white;
+	font-size: 15px;
+}
+.hbtn:hover{
+	cursor: pointer;
+	color:skyblue;
+	background: white;
+	transition: 0.3s ease-in-out;
+}
+.banner{
+	background: url("fire.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:bottom; ;
+	background-repeat: no-repeat;
+	height:550px;
+	overflow: hidden;
+}
+.htext h1{
+	letter-spacing: 0.1em;
+	display: inline-block;
+	vertical-align: middle;
+	font-size:60px;
+	color:white;
+	width:100%;
+	text-align: center;
+	margin-top:100px;
+	padding:0 10px;
+}
+.htext p{
+	display: inline-block;
+	font-size: 20px;
+	color:white;
+	font-weight: bolder;
+	width:100%;
+	padding:0 10px;
+	text-align: center;
+	margin-top:10px;
+}
+.btn{
+	cursor: pointer;
+	background: skyblue;
+	box-shadow: 5px 5px 20px 0 black;
+	color:white;
+	width:50%;
+	height:55px;
+	display: block;
+	margin:50px auto 0 auto;
+	font-size: 20px;
+	padding:14px;
+	text-align: center;
+	border-radius: 4px;
+	border:none;
+}
+
+/*Second amin div styles*/
+
+
+.banner2{
+	width:100%;
+	height:auto;
+	padding: 20px;
+	background: gainsboro;
+}
+.banner2 h1{
+	width:100%;
+	padding-top: 50px;
+	margin:0 auto;
+	font-size: 40px;
+	text-align: center;
+}
+.banner2 p{
+	text-align: center;
+	width: 100%;
+	margin: 10px auto ;
+	font-size: 20px;
+}
+.wrap{
+	width:70%;
+	margin: 20px auto;
+	height:auto;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card{
+	width:300px;
+	margin:20px auto;
+	padding: 15px;
+	height: 350px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.card .card-img{
+	background-color: white;
+	margin:0 auto;
+	overflow: hidden;
+	width:175px;
+	height:175px;
+	border-radius: 100%;
+}
+.card-img img{
+	width:175px;
+	height:175px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card p{
+	padding-top: 20px;
+	text-align:center;
+}
+
+/*third div styles*/
+.ban3{
+	width:100%;
+	height: auto;
+}
+.wrap2{
+	width:90%;
+	height:680px;
+	margin: 80px auto;
+	padding: 100px;
+	background:url("flora.jpeg");
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	border: 10px solid lightblue;
+}
+.inner{
+	width: 100%;
+	height:100%;
+	padding: 50px;
+	border:10px solid lightblue;
+	background: transparent;
+}
+.inner p{
+	font-weight: bolder;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	width:100%;
+
+}
+/*fourth div styles*/
+.ban4{
+	width:100%;
+	height:700px;
+	background: gainsboro;
+	padding:40px;
+}
+.wrap3{
+	display: flex;
+	width:80%;
+	height:auto;
+	margin:0 auto;
+	padding: 60px;
+}
+.cardanim{
+	width:500px;
+	height: 500px;
+	border-radius: 5px;
+	background: white;
+	margin:20px auto;
+}
+.first{
+	box-shadow: 0 20px 100px 0 gray;
+	z-index: 1;
+	padding:50px;
+}
+.second:active{
+	transition: 1s ease;
+	transform: translateX(70px);
+	margin-top: 20px;
+	padding:50px;
+	width:500px;
+	height: 500px;
+}
+.cardanim h1{
+	text-align: center;
+	font-weight: bold;
+	font-size: 27px;
+	margin-top: 20px;
+	width:100%;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+.cardanim p{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 25px;
+	opacity: 0.6
+}
+.cardanim button{
+	border-radius:25px;
+	border:none;
+	font-size: 25px;
+	padding:5px 10px;
+	width:100%;
+	height:55px;
+	text-transform: capitalize;
+	color:white;
+	background:deeppink;
+}
+.second{
+	padding: 38px;
+	margin-top: 45px;
+	margin-left: -50px;
+	background: white;
+	width:450px;
+	height:450px;
+	z-index: 0;
+	box-shadow: 0 20px 100px 0 gray;
+}
+.second h1{
+	font-size: 27px;
+}
+.second p{
+	font-size: 20px;
+}
+.second button{
+	background: royalblue;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1385px){
+	header{
+		width:100%;
+	}
+	.inner p{
+		font-size: 20px;
+	}
+	//.inner .btn{
+		width:100%;
+	}
+}
+@media screen and (max-width: 960px){
+	.nav-btns{
+		margin-left: 10px;
+	}
+	.nav li{
+		margin-left: 20px;
+	}
+	.nav ul{
+		margin-left:10px; 
+	}
+	.inner p{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width:860px){
+	.wrap{
+		width:100%;
+	}
+	.card{
+		width:100%;
+	}
+	
+}

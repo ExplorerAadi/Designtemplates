@@ -1,0 +1,395 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--raleway);
+	font-size: 20px;
+	transition: .5s linear;
+}
+
+.header{
+	height: 100vh;
+	width:100%;
+	background: url(images/header.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.header h1{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 50px;
+	width:90%;
+	text-align: center;
+	color: #333;
+	animation: slide 2s 1;
+}
+
+@keyframes slide{
+	0%{
+		top:45%;
+		opacity: 0;
+	}
+	100%{
+		top:50%;
+		opacity: 1;
+	}
+}
+
+nav{
+	position: absolute;
+	top:30px;
+	left:50%;
+	transform: translate(-50%,0);
+	height:60px;
+	width:90%;
+	display: flex;
+	margin: 0 auto;
+}
+
+.logo{
+	width:125px;
+	height: 100%;
+}
+
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+
+ul{
+	display: none;
+	margin-left: auto;
+}
+
+ul a{
+	position: relative;
+	text-decoration: none;
+	padding:0 20px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color:var(--grey);
+	opacity: 0.6;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+ul a:hover{
+	opacity: 1;
+	background: #fff;
+}
+
+#sear{
+	width:30px;
+	height: 30px;
+	position: relative;
+	top:10px;
+}
+
+.one, .two, .three{
+	margin: 5px 0;
+	background: var(--grey);
+}
+
+.icon{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background:transparent;
+	height: 60px;
+	width:60px;
+	padding:10px;
+}
+
+.one{
+	display: block;
+	border-radius:15px;
+	width:100%;
+	height:5px;
+	text-align: center;
+	line-height: 40px;
+	transition: 1s ease-in-out;
+}
+
+.two{
+	display: block;
+	border-radius:15px;
+	width:60%;
+	height:5px;
+	text-align: center;
+	transition: 0.5s ease-in-out;
+	line-height: 40px;
+}
+
+.three{
+	display: block;
+	border-radius:15px;
+	width:80%;
+	height:5px;
+	text-align: center;
+	line-height: 40px;
+	transition: 1s ease-in-out;
+}
+
+.icon:hover .two{
+	opacity:  0;
+}
+
+.icon:hover .one{
+	background: var(--fred);
+	transform: translateY(10px) rotate(-45deg);
+}
+
+.icon:hover .three{
+	width: 100%;
+	background: var(--fred);
+	transform:translateY(-10px) rotate(45deg);
+}
+
+
+.about{
+	width:100%;
+	height: auto;
+	padding: 20px 0;
+	background: var(--grey);
+	color:#777;
+}
+
+.wrapper{
+	width:90%;
+	margin: 0px auto;
+	padding: 40px 0;
+}
+
+.wrapper h1, h2{
+	font-size: 60px;
+	opacity: 0.8;
+}
+
+.wrapper p{
+	opacity: 0.5;
+}
+
+.acon{
+	margin-top: 20px;
+	padding: 0;
+	color: #fff;
+}
+
+#acon1 h2{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+#acon1 p{
+	font-size: 20px;
+}
+
+#acon2{
+	margin-top: 50px;
+}
+
+#acon2 h2{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+#acon2 p{
+	font-size: 30px;
+}
+
+.ani{
+	margin-top: 50px;
+}
+
+.ani img{
+	width:60px;
+	height: 60px;
+}
+
+#acon3{
+	margin-top: 70px;
+	width:100%;
+	height: 400px;
+	background: url(images/image.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+
+
+.cat{
+	height: auto;
+	width:100%;
+}
+
+.headcat{
+	color:rgba(0,0,0,0.5);
+	font-size: 60px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.con{
+	height: 50vh;
+	background: black;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.overlay{
+	width:100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.con:hover .imgw{
+	transform: scale(1.1);
+}
+
+.con:hover .overlay{
+	opacity: 0;
+}
+
+.overlay h1{
+	transition: 0.2s ;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #fff;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+#img1{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(images/bathroom.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#img2{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(images/kitchen.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#img3{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(images/bedroom.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#img4{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(images/livingroom.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.foot{
+	opacity: 0.7;
+	padding: 10px 0;
+	text-align: center;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 800px){
+	.icon{
+		display: none;
+	}
+	ul{
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.header h1{
+		font-size: 100px;
+	}
+
+	.about{
+		height: 100vh;
+		padding: 0;
+	}
+
+	.about h1{
+		font-size: 100px;
+	}
+
+	.wrapper{
+		padding: 20px 60px;
+	}
+
+	.acon{
+		display: flex;
+	}
+	#acon1{
+		width:50%;
+		margin-right: 20px;
+	}
+	#acon2{
+		width: 25%;
+		margin:0 20px 0 0;
+	}
+	#acon3{
+		width:25%;
+		margin:0;
+
+	}
+
+	.ani{
+		margin-top: 15px;
+	}
+
+	.ani img{
+		width:90px;
+		height: 80px;
+	}
+	.cat{
+		height: 100vh;
+	}
+
+	.headcat{
+		width: 80%;
+		font-size: 100px;
+	}
+
+	.con h1{
+		text-align: center;
+		font-size: 40px;
+	}
+
+	.con{
+		margin: -3px;
+		display: inline-block;
+		width:25.1%;
+		height:82vh;
+	}
+
+
+
+
+
+
+
+}

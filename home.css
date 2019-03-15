@@ -1,0 +1,281 @@
+/*global declarations*/
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Roboto',sans-serif;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+/*Header styles*/
+header{
+	position: relative;
+	max-width: 100%;
+	height: 725px;
+	background: url("pexels-photo-445109.jpeg") center center;
+	background-size: cover;
+}
+.logo{
+	margin: 5px 0 0 40px;
+	float:left;
+	text-align: center;
+	color:black;
+	padding:17px;
+	background-color: white;
+	height: 75px;
+	width: 75px;
+	cursor:pointer;
+}
+nav{
+	float:right;
+	margin:30px 30px 0px 0px;
+}
+nav a{
+	display:inline-block;
+	margin-left:1em;
+	padding-bottom: 10px; 
+	color: white;
+	font-size: 25px;
+}
+header nav a:hover{
+	border-bottom: 2px solid white;
+	color: white;
+}
+
+header h1{
+	clear: both;
+	position: relative;
+	text-align: center;
+	font-size: 300px;
+	font-weight: 700;
+	color:white;
+	padding-top: 75px;
+	cursor:context-menu;
+}
+span{
+	display: inline-block;
+	border:10px solid white;
+	padding: 20px 50px;
+}
+.head-button{
+	margin:50px auto;
+	max-width: 250px;
+	height: 70px;
+	padding: 0.6em;
+	text-align: center;
+	background-color: #0D47A1;
+	border-radius: 50px;
+	color:black;
+	cursor: pointer;
+	box-shadow: 5px 5px 10px 0;
+}
+.head-button p{
+	font-size:25px;
+	font-weight: 550;
+	position: relative;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.head-button:hover{
+	background-color: white;
+	color:blue;
+	transition: ease-in-out 0.5s;
+}
+/*Second container code*/
+.container{
+	text-align: center;
+	height:auto;
+	max-width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	padding: 100px;
+	color:black;
+	background-color:white ;
+}
+/*The shaded div*/
+.content-wrap{
+	position: relative;
+	text-align: center;
+	max-height: 1500px;
+	height:auto;
+	width:70%;
+	min-width:310px;
+	margin:50px auto;
+	padding:50px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px 1px black;
+}
+/*The translated pic*/
+.pic{
+	height: 200px;
+	max-height: 100%;
+	width: 200px;
+	border-radius: 100%;
+	background:url("derek1.jpg") center center;
+	background-size: cover;
+	margin:-50px auto;
+	transform: translateY(-50%);
+}
+.content-wrap h1{
+	margin:10px auto;
+	text-align: center;
+	font-size: 30px;
+	padding: 10px;
+}
+.content-wrap p{
+	font-size: 20px;
+	font-weight: 525;
+}
+/*Responsive design for different viewports*/
+@media screen and (max-width: 1400px){
+	.content-wrap p{
+		font-size:16px;
+	}
+}
+
+@media screen and (max-width: 1150px){
+	.content-wrap p{
+		font-size:15px;
+	}
+	.pic{
+		height:150px;
+		width:150px;
+	}
+}
+@media screen and (max-width: 920px){
+	.content-wrap p{
+		font-size:13.5px;
+	}
+	.pic{
+		height:100px;
+		width:100px;
+	}
+}
+@media screen and (max-width: 765px){
+	.content-wrap p{
+		font-size:12px;
+	}
+	.pic{
+		height:100px;
+		width:100px;
+	}
+}@media screen and (max-width: 670px){
+	.content-wrap p{
+		font-size:11px;
+	}
+	.pic{
+		height:75px;
+		width:75px;
+	}
+}
+/*Mail subscription section*/
+.mail{
+	position: relative;
+	height:300px;
+	background-color: #0D47A1;
+	padding:30px;
+}
+.mail .mailwrap{
+	position: relative;
+	max-width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding:5px;
+
+}
+.mail h1{
+	letter-spacing: 6px;
+	font-size: 40px;
+	margin:10px auto;
+	font-weight: 700;
+	max-width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color:white;
+}
+input,button{
+	margin:auto 20px;
+	cursor: pointer;
+}
+.mail input[type=text]{
+	padding:20px;
+	font-size: 30px;
+	height: 70px;
+	width:70%;
+	border:none;
+	border-radius: 50px;
+}
+.mail input[type=text]:focus{
+	border:2px inset blue;
+}
+.mail .mailwrap button{
+	height:70px;
+	font-size: 30px;
+	width:20%;
+	border-radius: 50px;
+	border:none;
+	background-color: black;
+	opacity: 0.8;
+	color:white;
+}
+
+/*Item elements*/
+.item{
+	display:flex;
+	flex-direction: column;
+	margin:20px;
+	padding:20px;
+	border:1px solid black;
+	border-radius: 10px;
+	box-shadow: 15px 20px 10px 0 rgba(0,0,0,0.7);
+	height: :200px;
+	width:600px;
+	max-width: 70%;
+	text-align: center;
+	overflow: hidden;
+}
+.item:hover{
+	background-color:black;
+	opacity: 0.8;
+	box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.5);
+	transition: 0.5s ease-in-out;
+	color:white;
+}
+.item img{
+	margin:0 auto 20px auto;
+	max-width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+}
+
+footer{
+	text-align: center;
+	height: 250px;
+	background-color: black;
+	content: "";
+}
+#foot{
+	max-width: 60%;
+	margin:auto;
+}
+footer nav{
+	margin:30px auto 15px auto;
+	width:100%;
+}
+footer nav a{
+	font-size: 20px;
+	font-weight: bolder;
+}
+footer .sup,p{
+	margin:20px auto;
+	color: white;
+	font-size: 15px;
+}
